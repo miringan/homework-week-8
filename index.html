@@ -12,7 +12,7 @@
 <body>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id = navBar>
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Michael Iringan's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,24 +20,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#aboutMe">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#contactMe">Contact Me</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Projects
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#madMoji">madMoji</a>
+                <a class="dropdown-item" href="#weatherDashboard">Weather Dashboard</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#seattleSportsQuiz">Seattle Sports Trivia Quiz</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -50,17 +47,20 @@
     <!-- About Me -->
     <div class="jumbotron m-3 bg-dark text-light" id = 'aboutMe'>
         <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">Welcome to my portfolio! My name is Michael Iringan and this page showcases some of my works as a full stack web developer, please have a look around!</p>
+        <p class="lead">My name is Michael Iringan and this page showcases some of my works as a full stack web developer, please have a look around!</p>
         <hr class="my-4">
         <p>For more of my work, please check out my LinkedIn profile.</p>
-        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/michael-iringan/" role="button">Learn more from my LinkedIn</a>
+        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/michael-iringan/" target="_blank" role="button">LinkedIn</a>
+        <p></p>
+        <p>For more of my work history, please check out my resume.</p>
+        <a class="btn btn-primary btn-lg" href="https://github.com/miringan/homework-week-8/blob/main/Michael%20Iringan%20Resume%209-30-21.pdf" target="_blank" role="button">Resume</a>
     </div>
 
     <!-- Projects -->
     <div class="bg-light p-3 m-3 rounded border-0">
 
       <!-- Featured Project -->
-      <div class="card container-md mx-auto bg-light shadow p-3 mb-5 rounded">
+      <div class="card container-md mx-auto bg-light shadow p-3 mb-5 rounded" id="madMoji">
         <div class="card-header">
           Featured Project
         </div>
@@ -68,28 +68,31 @@
         <div class="card-body">
           <h5 class="card-title">madMoji</h5>
           <p class="card-text">madMoji was a project that I worked on with Samantha Vellucci, Sean Ashby, Mohamed Mohamud, and Sawyer Silfes. This application features a Madlibs style game that utilizes emojis instead of words.</p>
-          <a href="https://svellucci18.github.io/madMoji/" class="btn btn-primary">Launch madMoji</a>
+          <a href="https://svellucci18.github.io/madMoji/" target="_blank" class="btn btn-primary">Launch madMoji</a>
+          <a href="https://github.com/svellucci18/madMoji" target="_blank" class="btn btn-primary">View Repository</a>
         </div>
       </div>
       <!-- Homework Examples -->
       <div class="row">
-        <div class="container-md m-3 p-3 mx-auto border-0 border-primary rounded bg-secondary shadow">
+        <div id="weatherDashboard" class="container-md m-3 p-3 mx-auto border-0 border-primary rounded bg-secondary shadow">
           <img src="./weatherdashboardscreencap.png" class="card-img-top m-1 mx-auto" alt="...">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Weather Dashboard</h5>
+              <p class="card-text">The Weather Dashboard is a web application I made that allows users to search for weather information for any city in the world. It makes fetch calls to the One Call and the Geo API's of openweathermap.org.</p>
+              <a href="https://miringan.github.io/homework-week-6/" target="_blank" class="btn btn-primary">Launch Weather Dashboard</a>
+              <a href="https://github.com/miringan/homework-week-6" target="_blank" class="btn btn-primary">View Repository</a>
             </div>
           </div>
         </div>
-        <div class="container-md m-3 p-3 mx-auto border-0 border-primary rounded bg-secondary shadow">
+        <div id="seattleSportsQuiz" class="container-md m-3 p-3 mx-auto border-0 border-primary rounded bg-secondary shadow">
           <img src="./seattlesportsquizscreencap.png" class="card-img-top m-1 mx-auto" alt="...">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Seattle Sports Trivia Quiz</h5>
               <p class="card-text">Seattle Sports Trivia Quiz is a quiz application I created that tests the users' knowledge of Seattle sports trivia. It operates with an html file that is dynamically written and altered with a script.js style. The app also features simple styling from a css file.</p>
-              <a href="https://miringan.github.io/homework-week-4/" class="btn btn-primary">Seattle Sports Trivia Quiz</a>
+              <a href="https://miringan.github.io/homework-week-4/" target="_blank" class="btn btn-primary">Launch Seattle Sports Trivia Quiz</a>
+              <a href="https://github.com/miringan/homework-week-4" target="_blank" class="btn btn-primary">View Repository</a>
             </div>
           </div>
         </div>
@@ -99,13 +102,13 @@
     </div>
 
     <!-- Contact Me -->
-    <div class="card mx-auto m-3" style="width: 18rem;">
+    <div class="card mx-auto m-3" style="width: 18rem;" id="contactMe">
       <div class="card-header">
         Contact me
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Phone: <a>425.299.9407</a></li>
-        <li class="list-group-item">Github: <a href="https://github.com/miringan">miringan</a></li>
+        <li class="list-group-item">Github: <a href="https://github.com/miringan" target="_blank">miringan</a></li>
         <li class="list-group-item">Email: <a href="mailto:miringan@uw.edu">miringan@uw.edu</a></li>
       </ul>
     </div>
