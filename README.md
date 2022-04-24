@@ -9,7 +9,7 @@ Active Link: https://miringan.github.io/homework-week-8/ <br>
 
 ## Description
 This repository contains files that establish my portfolio of previous coding works. It features an html file stylized with bootstrap classes and contains links to my LinkedIn, resume, and previous launched web applications. This file will continuously be updated as more of my projects get completed.
-![screenshot](screenshot.png?raw=true "Screenshot")
+![screenshot](assets/screenshot.png?raw=true "Screenshot")
 
 ## Table of Contents
 - [License](#license)
